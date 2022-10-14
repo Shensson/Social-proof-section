@@ -84,6 +84,7 @@ select {
 main{
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-family: 'League Spartan', sans-serif;
@@ -96,7 +97,7 @@ main{
 .card-row-1{
     display: grid;
     grid-template-columns: 375px auto;
-    gap: 100px;
+    gap: 170px;
     margin-bottom: 70px;
 }
 .card-row-1 h1{
@@ -152,6 +153,7 @@ margin-left: 50px;
   display: grid;
   border-radius: 10px;
   height: 250px;
+  width: 330px;
 }
 .buyer-card img{
   border-radius: 50%;
