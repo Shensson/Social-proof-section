@@ -83,13 +83,12 @@ select {
 
 main{
     height: 100%;
-    flex-wrap: wrap;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'League Spartan', sans-serif;
 }
 .card{
-    margin: 150px;
     display: grid;
     grid-template-rows: auto auto;
 }
@@ -140,4 +139,43 @@ margin-left: 50px;
 }
 .bot{
   margin-left: 100px;
+}
+.card-row-2{
+  display: flex;
+  gap: 30px
+  ;
+}
+.buyer-card{
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 30px;
+  display: grid;
+  border-radius: 10px;
+  height: 250px;
+}
+.buyer-card img{
+  border-radius: 50%;
+  width: 50px;
+}
+.buyer-card h4{
+  font-weight: 500;
+  text-align: left;
+  height: auto;
+}
+.buyer-card p{
+  margin-top: 25px;
+  grid-column: 1 / span 2;
+}
+.title-section{
+  text-align: left;
+  
+}
+.verified{
+  color: hsl(333, 80%, 67%);
+}
+.irene{
+  margin-top: 20px;
+}
+.anne{
+  margin-top: 40px;
 }
