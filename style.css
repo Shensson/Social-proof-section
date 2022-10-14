@@ -82,6 +82,7 @@ select {
 }
 
 main{
+    margin-left: 0px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +120,11 @@ main{
   height: 175;
   overflow: visible;
 }
+.card-row-1-left{
+  margin-bottom: 0px;
+  animation-name: title-animation;
+  animation-duration: 2s;
+}
 .review{
 display: flex;
 align-items: center;
@@ -135,11 +141,26 @@ width: 400px;
   width: 20px;
   height: 20px;
 }
+.top{
+  animation-name: rating-animation-top;
+  animation-duration: 3s;
+  position: absolute;
+  margin-top: 0px;
+}
 .mid{
-margin-left: 50px;
+  animation-name: rating-animation-mid;
+  animation-duration: 3s;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 70px;
+  
 }
 .bot{
+  animation-name: rating-animation-bot;
+  animation-duration: 3s;
+  position: absolute;
   margin-left: 100px;
+  margin-top: 140px;
 }
 .card-row-2{
   display: flex;
@@ -175,9 +196,88 @@ margin-left: 50px;
 .verified{
   color: hsl(333, 80%, 67%);
 }
+.colton{
+  position: relative;
+  animation-name: people-animation-colton;
+  animation-duration: 1s;
+}
 .irene{
+  position: relative;
+  animation-name: people-animation-irene;
+  animation-duration: 1.5s;
   margin-top: 20px;
 }
 .anne{
+  animation-name: people-animation-anne;
+  animation-duration: 2s;
+  position: relative;
   margin-top: 40px;
+}
+@keyframes rating-animation-top{
+  0%{
+    margin-left: 2000px;
+    position: absolute;
+  }
+  100%{
+    margin-left: 0px;
+    position: absolute;
+  }
+}
+@keyframes rating-animation-mid{
+  0%{
+    margin-left: 2000px;
+    position: absolute;
+  }
+  100%{
+    margin-left: 50px;
+    position: absolute;
+  }
+}
+@keyframes rating-animation-bot{
+  0%{
+    margin-left: 2000px;
+    position: absolute;
+  }
+  100%{
+    margin-left: 100px;
+    position: absolute;
+  }
+}
+@keyframes people-animation-colton{
+  0%{
+    margin-top: 2000px;
+
+  }
+  100%{
+    margin-top: 0px;
+  }
+}
+@keyframes people-animation-irene{
+  0%{
+    margin-top: 2000px;
+
+  }
+  100%{
+    margin-top: 20px;
+  }
+}
+@keyframes people-animation-anne{
+  0%{
+    margin-top: 2000px;
+
+  }
+  100%{
+    margin-top: 40px;
+  }
+}
+@keyframes title-animation{
+  0%{
+    position: absolute;
+    width: 370px;
+    margin-top: -2000px;
+
+  }
+  100%{
+    margin-top:0px;
+  }
 }
