@@ -95,6 +95,7 @@ main{
     justify-content: center;
     font-family: 'League Spartan', sans-serif;
     box-shadow: 2px 10px 20px hsl(300, 43%, 22%);
+    overflow: hidden;
 }
 .card{
     display: grid;
@@ -151,23 +152,20 @@ box-shadow: 5px 5px 10px hsl(300, 44%, 11%);
 .top{
   animation-name: rating-animation-top;
   animation-duration: 2.5s;
-  position: absolute;
   margin-top: 0px;
 }
 .mid{
   animation-name: rating-animation-mid;
   animation-duration: 2.5s;
-  position: absolute;
   margin-left: 50px;
-  margin-top: 70px;
+  margin-top: 20px;
   
 }
 .bot{
   animation-name: rating-animation-bot;
   animation-duration: 2.5s;
-  position: absolute;
   margin-left: 100px;
-  margin-top: 140px;
+  margin-top: 20px;
 }
 .card-row-2{
   display: flex;
@@ -223,31 +221,26 @@ box-shadow: 5px 5px 10px hsl(300, 44%, 11%);
 @keyframes rating-animation-top{
   0%{
     margin-left: 2000px;
-    position: absolute;
   }
   100%{
     margin-left: 0px;
-    position: absolute;
+    
   }
 }
 @keyframes rating-animation-mid{
   0%{
     margin-left: 3000px;
-    position: absolute;
   }
   100%{
     margin-left: 50px;
-    position: absolute;
   }
 }
 @keyframes rating-animation-bot{
   0%{
     margin-left: 4000px;
-    position: absolute;
   }
   100%{
     margin-left: 100px;
-    position: absolute;
   }
 }
 @keyframes people-animation-colton{
