@@ -34,7 +34,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  max-width: 1440px;
+  max-width: 90rem;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -82,11 +82,11 @@ select {
 }
 
 main{
-    padding: 30px;
-    border-radius: 10px;
+    padding: 1.875rem;
+    border-radius: 0.625rem;
     background-size: cover;
-    margin-left: 70px;
-    margin-top: 50px;
+    margin-left: 4.375rem;
+    margin-top: 3.125rem;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -102,16 +102,16 @@ main{
 /* Title and description */
 .card-row-1{
     display: grid;
-    grid-template-columns: 375px auto;
-    gap: 170px;
-    margin-bottom: 70px;
+    grid-template-columns: 23.4375rem auto;
+    gap: 10.625rem;
+    margin-bottom: 4.375rem;
 }
 .card-row-1 h1{
     color: hsl(300, 43%, 22%);
-    font-size: 48px;
-    letter-spacing: -2px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    letter-spacing: -0.125rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
     font-weight: 700;
 }
 .card-row-1 p{
@@ -121,61 +121,61 @@ main{
 .card-row-1-right{
   display: grid;
   grid-template-rows: auto;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   height: 175;
   overflow: visible;
 }
 .card-row-1-left{
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 .review{
 display: flex;
 align-items: center;
-gap: 10px;
+gap: 0.625rem;
 background: hsl(300, 24%, 96%);
-padding-left: 20px;
-border-radius: 10px;
+padding-left: 1.25rem;
+border-radius: 0.625rem;
 color: hsl(300, 43%, 22%);
 font-weight: 500;
-height: 55px;
-width: 400px;
+height: 3.4375rem;
+width: 25rem;
 }
 .review img{
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .images{
   display: flex;
 }
 .top{
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 .mid{
-  margin-left: 50px;
-  margin-top: 20px;
+  margin-left: 3.125rem;
+  margin-top: 1.25rem;
   
 }
 .bot{
-  margin-left: 100px;
-  margin-top: 20px;
+  margin-left: 6.25rem;
+  margin-top: 1.25rem;
 }
 .card-row-2{
   display: flex;
-  gap: 30px
+  gap: 1.875rem
   ;
 }
 .buyer-card{
   background-color: hsl(300, 43%, 22%);
   color: white;
-  padding: 30px;
+  padding: 1.875rem;
   display: grid;
-  border-radius: 10px;
-  height: 250px;
-  width: 330px;
+  border-radius: 0.625rem;
+  height: 15.625rem;
+  width: 20.625rem;
 }
 .buyer-card img{
   border-radius: 50%;
-  width: 50px;
+  width: 3.125rem;
 }
 .buyer-card h4{
   font-weight: 500;
@@ -183,7 +183,7 @@ width: 400px;
   height: auto;
 }
 .buyer-card p{
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   grid-column: 1 / span 2;
 }
 .title-section{
@@ -198,24 +198,24 @@ width: 400px;
 }
 .irene{
   position: relative;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .anne{
   position: relative;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
-@media(max-width: 500px){
+@media(max-width: 31.25rem){
   main{
-    max-width: 375px;
+    max-width: 23.4375rem;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 0;
     align-items: center;
     text-align: center;
   }
   .card{
-    max-width: 375px;
+    max-width: 23.4375rem;
     display: flex;
     flex-direction: column;
   }
@@ -223,23 +223,23 @@ width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
   .card-row-1 h1{
     width: fit-content;
-    margin-top: 100px;
+    margin-top: 6.25rem;
   }
   .card-row-1 p{
     text-align: center;
     padding: 0;
-    width: 320px;
+    width: 20rem;
   }
   .card-row-1-right{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-    height: 175px;
+    margin-top: 0.625rem;
+    height: 10.9375rem;
   }
   .card-row-1-left{
     display: flex;
@@ -251,42 +251,42 @@ width: 400px;
     grid-template-rows: auto;
     align-content: center;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
     background: hsl(300, 24%, 96%);
-    padding-left: 20px;
-    border-radius: 10px;
+    padding-left: 1.25rem;
+    border-radius: 0.625rem;
     color: hsl(300, 43%, 22%);
     font-weight: 500;
-    height: 55px;
-    width: 350px;
+    height: 3.4375rem;
+    width: 21.875rem;
     }
     .images{
       display: flex;
-      gap: 5px;
+      gap: 0.3125rem;
     }
     .top{
       display: flex;
       flex-direction: column;
       padding: 0;
-      margin-top: 0px;
+      margin-top: 0rem;
     }
     .mid{
       display: flex;
       flex-direction: column;
-      margin-top: 20px;
+      margin-top: 1.25rem;
       margin-left: 0;
       
     }
     .bot{
       display: flex;
       flex-direction: column;
-      margin-top: 20px;
+      margin-top: 1.25rem;
       margin-left: 0;
     }
     .card-row-2{
       align-items: center;
       display: flex;
       flex-direction: column;
-      margin-bottom: 50px;
+      margin-top: 20px;
     }
 }
