@@ -82,10 +82,9 @@ select {
 }
 
 main{
-   padding: 30px;
-   border-radius: 10px;
-   background-image: url(images/Untitled.jpeg);
-   background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
     margin-left: 70px;
     margin-top: 50px;
     height: 100%;
@@ -94,7 +93,6 @@ main{
     align-items: center;
     justify-content: center;
     font-family: 'League Spartan', sans-serif;
-    box-shadow: 2px 10px 20px hsl(300, 43%, 22%);
     overflow: hidden;
 }
 .card{
@@ -129,8 +127,6 @@ main{
 }
 .card-row-1-left{
   margin-bottom: 0px;
-  animation-name: title-animation;
-  animation-duration: 2s;
 }
 .review{
 display: flex;
@@ -143,27 +139,23 @@ color: hsl(300, 43%, 22%);
 font-weight: 500;
 height: 55px;
 width: 400px;
-box-shadow: 5px 5px 10px hsl(300, 44%, 11%);
 }
 .review img{
   width: 20px;
   height: 20px;
 }
+.images{
+  display: flex;
+}
 .top{
-  animation-name: rating-animation-top;
-  animation-duration: 2.5s;
   margin-top: 0px;
 }
 .mid{
-  animation-name: rating-animation-mid;
-  animation-duration: 2.5s;
   margin-left: 50px;
   margin-top: 20px;
   
 }
 .bot{
-  animation-name: rating-animation-bot;
-  animation-duration: 2.5s;
   margin-left: 100px;
   margin-top: 20px;
 }
@@ -203,81 +195,98 @@ box-shadow: 5px 5px 10px hsl(300, 44%, 11%);
 }
 .colton{
   position: relative;
-  animation-name: people-animation-colton;
-  animation-duration: 1s;
 }
 .irene{
   position: relative;
-  animation-name: people-animation-irene;
-  animation-duration: 1.5s;
   margin-top: 20px;
 }
 .anne{
-  animation-name: people-animation-anne;
-  animation-duration: 2s;
   position: relative;
   margin-top: 40px;
 }
-@keyframes rating-animation-top{
-  0%{
-    margin-left: 2000px;
+@media(max-width: 500px){
+  main{
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+    align-items: center;
+    text-align: center;
   }
-  100%{
-    margin-left: 0px;
-    
+  .card{
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
   }
-}
-@keyframes rating-animation-mid{
-  0%{
-    margin-left: 3000px;
+  .card-row-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
-  100%{
-    margin-left: 50px;
+  .card-row-1 h1{
+    width: fit-content;
+    margin-top: 100px;
   }
-}
-@keyframes rating-animation-bot{
-  0%{
-    margin-left: 4000px;
+  .card-row-1 p{
+    text-align: center;
+    padding: 0;
+    width: 320px;
   }
-  100%{
-    margin-left: 100px;
+  .card-row-1-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: 175px;
   }
-}
-@keyframes people-animation-colton{
-  0%{
-    margin-top: 2000px;
-
+  .card-row-1-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  100%{
-    margin-top: 0px;
-  }
-}
-@keyframes people-animation-irene{
-  0%{
-    margin-top: 2000px;
-
-  }
-  100%{
-    margin-top: 20px;
-  }
-}
-@keyframes people-animation-anne{
-  0%{
-    margin-top: 2000px;
-
-  }
-  100%{
-    margin-top: 40px;
-  }
-}
-@keyframes title-animation{
-  0%{
-    position: absolute;
-    width: 370px;
-    margin-top: -2000px;
-
-  }
-  100%{
-    margin-top:0px;
-  }
+  .review{
+    display: grid;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    background: hsl(300, 24%, 96%);
+    padding-left: 20px;
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+    height: 55px;
+    width: 350px;
+    }
+    .images{
+      display: flex;
+      gap: 5px;
+    }
+    .top{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin-top: 0px;
+    }
+    .mid{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 0;
+      
+    }
+    .bot{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+    .card-row-2{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
 }
